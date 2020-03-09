@@ -154,6 +154,26 @@ a.active_page {
 	display: flex;
 }
 
+preview {
+	display: none;
+	max-width: 670px;
+}
+
+.preview img {
+	width: 100%;
+	height: auto;
+	max-width: 650px;
+	padding: 5px 5px 0px 0px;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+.preview img:hover {
+	transition: filter .5s ease-in-out;
+	-webkit-filter: grayscale(0%);
+	filter: grayscale(0%);
+}
+
 project {
 	display: none;
 	max-width: 670px;
@@ -198,22 +218,11 @@ project {
 	color: #ffffff;
 }
 
-img {
+.project_content img {
 	width: 100%;
 	height: auto;
 	max-width: 650px;
 	padding: 5px 5px 0px 0px;
-}
-
-#exp img {
-	-webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
-}
-
-#exp img:hover {
-	transition: filter .5s ease-in-out;
-	-webkit-filter: grayscale(0%);
-	filter: grayscale(0%);
 }
 
 /**
