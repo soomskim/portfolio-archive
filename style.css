@@ -164,14 +164,14 @@ preview {
 	height: auto;
 	max-width: 650px;
 	padding: 5px 5px 0px 0px;
-	-webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
+	/*-webkit-filter: grayscale(100%);
+	filter: grayscale(100%); */
 }
 
 .preview img:hover {
 	transition: filter .5s ease-in-out;
-	-webkit-filter: grayscale(0%);
-	filter: grayscale(0%);
+	/*-webkit-filter: grayscale(0%);
+	filter: grayscale(0%); */
 }
 
 project {
@@ -194,13 +194,19 @@ project {
 .project_content {
 	max-width: 650px;
 	width: 100%;
-	color: #333333;
+	color: #B8860B;
 }
 
 .project_content br {
 	clear: both;
 }
 
+.project_content p {
+	color: #808080;
+	display: fixed;
+}
+
+/*links*/
 .project_content a {
 	color: #333333;
 	text-decoration: underline;
