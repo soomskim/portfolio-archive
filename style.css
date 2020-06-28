@@ -6,7 +6,7 @@ html {
 }
 
 body {
-	font-family: 'Roboto', Helvetica, 'Helvetica Neue', sans-serif;
+	font-family: 'Roboto', monospace, Helvetica, 'Helvetica Neue', sans-serif;
 	margin: 0 auto;
 	margin-bottom: 30px;
 	font-size: 16px;
@@ -14,24 +14,73 @@ body {
 	font-weight: 300;
 }
 
+
+footer {
+	line-height: 1.2em;
+	font-size: 12px;
+	margin-left: 42px;
+	padding: 0px;
+	z-index: 12;
+	top: 25px;
+	width: 200px;
+	z-index: 9;
+}
+
+footer p {
+	color: #A0A0A0;
+}
+
 @font-face {
     font-family: "Blackletter";
     src: url(./fonts/Lucida-Blackletter-Regular.ttf) format("truetype");
 }
-/* font for page titles */
+/* font for selected works page titles */
 h1 { 
     font-family: "Blackletter";
     color: #333333;
-    font-size: 14px;
+    font-size: 16px;
     font-style: italic;
     margin: 0 auto;
 }
 
+/* font for experience page titles */
 h2 { 
+    font-family: Helvetica;
+    color: #333333;
+    font-size: 19px;
+    margin: 0 auto;
+    padding: 0 0 4px 0;
+}
+
+/* ---- other font classes -----*/
+/* sub-header */
+h3 { 
+    font-family: "Helvetica Neue", serif;
+    color: #333333;
+    font-style: bold;
+    font-size: 15px;
+    margin: 0 auto;
+    padding: 7px 0 0 0;
+}
+
+/* header descriptor */
+h4 { 
     font-family: "Helvetica Neue";
     color: #333333;
-    font-size: 14px;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 13px;
     margin: 0 auto;
+    padding: 2px 0 5px 0;
+	line-height: 1em;
+}
+
+/* captions */
+figcaption {
+	font-family: "Helvetica";
+	color: #A0A0A0;
+	font-style: italic;
+	font-size: 13px;
 }
 
 
@@ -62,12 +111,12 @@ h2 {
 }
 
 .header_text a {
-	color: #A0A0A0; /*------------------------B8860B */
+	color: #333333; /*------------------------B8860B */
 	text-decoration: blink;
 }
 
 .header_text a:hover {
-	color: #A4FFA4; /*------------------------000*/
+	color: #333333; /*------------------------000*/
 	border-bottom: 0;
 }
 
@@ -165,8 +214,8 @@ a.active_page {
  */
  
 .container {
-	margin: 145px 40px 45px 270px;
-	padding-bottom: 10px;
+	margin: 145px 40px 0px 270px;
+	padding-bottom: 5px;
 	padding-top: 1px;
 	max-width: 900px;
 	position: relative;
@@ -200,13 +249,14 @@ project {
 }
 
 /*-------------------------------------------------------------------*/
-.project_title {
+/*--.project_title {
 	color: #A0A0A0;
 	font-size: 12px;
 	font-weight: bold;
 	line-height: 1.8em;
-	padding: 0 0 20px 0;
+	padding: 0 0 15px 0;
 }
+*/
 
 .entry {
 	clear: both;
@@ -215,7 +265,7 @@ project {
 .project_content {
 	max-width: 650px;
 	width: 100%;
-	color: #A0A0A0 /*------------------------B8860B*/;
+	color: #A0A0A0 /*------------------------B8860B;*/
 }
 
 .project_content br {
@@ -223,13 +273,15 @@ project {
 }
 
 .project_content p {
-	color: #A0A0A0;
+	color: #333333;
+	font-size: 15px;
 	display: fixed;
+	padding: 0 0 5px 0;
 }
 
 /*links*/
 .project_content a {
-	color: #A0A0A0;
+	color: #333333;
 	text-decoration: underline;
 	display: fixed;
 }
@@ -245,32 +297,85 @@ project {
 	color: #FFFFFF;
 }
 
+
+/*media*/
 .project_content img {
 	width: 100%;
 	height: auto;
 	max-width: 650px;
-	padding: 5px 5px 0px 0px;
+	padding: 3px 5px 0px 0px;
+	
+	user-drag: none; 
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	
+}
+
+#multipleImgs {
+	width: 100%;
+	height: auto;
+	max-width: 315px;
+	padding: 3px 5px 0px 0px;
+  	
+  	user-drag: none; 
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
 }
 
 .project_content video {
+	display: block;
 	width: 100%;
 	height: auto;
 	max-width: 650px;
 	padding: 5px 5px 0px 0px;
+	margin-left: auto;
+  	margin-right: auto;
+  	
+  	user-drag: none; 
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+#verticalVid {
+	display: block;
+	width: 100%;
+	height: auto;
+	max-width: 250px;
+	padding: 5px 5px 5px 0px;
+	margin-left: auto;
+  	margin-right: auto;
+  	
+  	user-drag: none; 
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
 }
 
 img.project_gif {
 	width: 100%;
 	height; auto;
-	max-width: 325px;s
+	max-width: 325px;
 	padding: 50px 50px 0px 0px;
+  	margin-left: auto;
+  	margin-right: auto;
+  	
+  	user-drag: none; 
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
 }
-
-
-
-/**
- * Slideshow
- */
- 
  
  
