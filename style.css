@@ -277,6 +277,15 @@ project {
 	
 }
 
+.static {
+  position:absolute;
+  background: white;
+}
+
+.static:hover {
+  opacity:0;
+}
+
 #multipleImgs {
 	width: 100%;
 	height: auto;
