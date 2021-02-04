@@ -326,8 +326,6 @@ project {
 	margin-left: auto;
   	margin-right: auto;
   	
-  	user-drag: none; 
-	user-select: none;
 	-moz-user-select: none;
 	-webkit-user-drag: none;
 	-webkit-user-select: none;
