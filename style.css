@@ -6,21 +6,24 @@ html {
 }
 
 body {
-	font-family: 'Roboto', monospace, Helvetica, 'Helvetica Neue', sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	margin: 0 auto;
 	margin-bottom: 30px;
 	font-size: 16px;
 	line-height: 19px;
-	font-weight: 300;
 }
 
 
 footer {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 14px;
 	position: fixed;
+	float: left;
  	right: 0;
   	bottom: 0;
   	left: 0;
-  	padding: 0 0 25px 42px;
+  	margin: 0 25px 5px 0;
+  	padding: 10px 25px;
   	color: #A0A0A0;
   	text-align: left;
 }
@@ -29,59 +32,58 @@ footer p {
 	color: #A0A0A0;
 }
 
-@font-face {
-    font-family: "Blackletter";
-    src: url(./fonts/Lucida-Blackletter-Regular.ttf) format("truetype");
+
+h1, h2, h3, p, figcaption, p2 {
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #333333;
 }
-/* font for selected works page titles */
+
+/* font for page titles */
 h1 { 
-    font-family: "Blackletter";
+    text-transform: uppercase;
+    font-weight: 400;
     color: #333333;
-    font-size: 16px;
-    font-style: italic;
+    font-size: 24px;
     margin: 0 auto;
+    padding: 0 0 5px 0;
 }
 
-/* font for experience page titles */
+/* sub-headers */
 h2 { 
-    font-family: Helvetica;
-    color: #333333;
+    font-weight: 400;
     font-size: 19px;
-    margin: 0 auto;
-    padding: 0 0 4px 0;
-}
-
-/* ---- other font classes -----*/
-/* sub-header */
-h3 { 
-    font-family: "Helvetica Neue", serif;
-    color: #333333;
-    font-style: bold;
-    font-size: 15px;
     margin: 0 auto;
     padding: 7px 0 0 0;
 }
 
 /* header descriptor */
-h4 { 
-    font-family: "Helvetica Neue";
-    color: #333333;
-    font-weight: normal;
+h3 { 
+    font-weight: 300;
     font-style: italic;
-    font-size: 13px;
+    font-size: 16px;
     margin: 0 auto;
-    padding: 2px 0 5px 0;
+    padding: 2px 0 8px 0;
 	line-height: 1em;
 }
 
+.project_content p {
+	font-size: 15px;
+	font-weight: 400;
+}
+
 /* captions */
-figcaption {
-	font-family: "Helvetica";
+p2 {
 	color: #A0A0A0;
+	font-weight: 300;
+	font-size: 15px;
+}
+
+figcaption {
+	color: #A0A0A0;
+	font-weight: 300;
 	font-style: italic;
 	font-size: 13px;
 }
-
 
 /**
  * Header image and header text
@@ -99,18 +101,16 @@ figcaption {
 }
 
 .header_text {
-	font-size: 25px;
-	font-weight: normal;
-	letter-spacing: 1px;
 	position: absolute;
 	top: -10px;
+	font-size: 19px;
 	white-space: nowrap;
 	padding: 2px 3px 2px 3px;
 	z-index: 999;
 }
 
 .header_text a {
-	color: #333333; /*------------------------B8860B */
+	color: #333333;
 	text-decoration: blink;
 }
 
@@ -130,7 +130,8 @@ figcaption {
 
 .navigation {
 	line-height: 1.8em;
-	font-size: 12px;
+	font-size: 14px;
+	font-weight: 300px;
 	margin: 0px;
 	padding: 0px;
 	padding-bottom: 30px;
@@ -222,40 +223,10 @@ a.active_page {
 	display: flex;
 }
 
-preview {
-	display: none;
-	max-width: 670px;
-}
-
-.preview img {
-	width: 100%;
-	height: auto;
-	max-width: 650px;
-	padding: 5px 5px 0px 0px;
-	/*-webkit-filter: grayscale(100%);
-	filter: grayscale(100%); */
-}
-
-.preview img:hover {
-	transition: filter .5s ease-in-out;
-	/*-webkit-filter: grayscale(0%);
-	filter: grayscale(0%); */
-}
-
 project {
 	display: none;
 	max-width: 670px;
 }
-
-/*-------------------------------------------------------------------*/
-/*--.project_title {
-	color: #A0A0A0;
-	font-size: 12px;
-	font-weight: bold;
-	line-height: 1.8em;
-	padding: 0 0 15px 0;
-}
-*/
 
 .entry {
 	clear: both;
@@ -269,13 +240,6 @@ project {
 
 .project_content br {
 	clear: both;
-}
-
-.project_content p {
-	color: #333333;
-	font-size: 15px;
-	display: fixed;
-	padding: 0 0 5px 0;
 }
 
 /*links*/
