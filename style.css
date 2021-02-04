@@ -278,12 +278,12 @@ project {
 }
 
 .static {
-  position:absolute;
-  background: white;
+  position: absolute;
+  background: #ffffff;
 }
 
 .static:hover {
-  opacity:0;
+  opacity: 0;
 }
 
 #multipleImgs {
